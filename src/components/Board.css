@@ -1,0 +1,31 @@
+.board {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    border: 2px solid #333;
+  }
+  
+  .square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .light {
+    background-color: #f0d9b5;
+  }
+  
+  .dark {
+    background-color: #b58863;
+  }
+  
+  .piece {
+    width: 80%;
+    height: 80%;
+    pointer-events: none; /* Prevent accidental drag-and-drop interaction */
+  }
+  
